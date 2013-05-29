@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="animate.js"></script>
+
+<script type="text/javascript">
+
+var gallery_bar = beat_bar("gallery", 500);
+var example_bar = beat_bar("example", 500);
+//var toggle_example = toggle_color(500, "example", "red");
+var randomize_example = randomize_color(500, "example");
+//var toggle_gallery = toggle_color(1000, "gallery", "blue");
+var randomize_gallery = randomize_color(500, "gallery");
+var contract_example_width = contract(1000, "example", "width", 20);
+setInterval(function(){if (parseInt($('div#example').css('width')) < 10) contract(1000, "gallery", "height", 2)}, 1000);
+setInterval(function(){if (parseInt($('div#example').css('width')) < 10) contract(1000, "div1", "height", 2)}, 1000);
+setInterval(function(){if (parseInt($('div#example').css('width')) < 10) contract(1000, "div2", "height", 2)}, 1000);
+setInterval(function(){if (parseInt($('div#example').css('width')) < 10) contract(1000, "div3", "height", 2)}, 1000);
+setInterval(function(){if (parseInt($('div#example').css('width')) < 10) contract(1000, "div4", "height", 2)}, 1000);
+setInterval(function(){if (parseInt($('div#example').css('width')) < 10) contract(1000, "div5", "height", 2)}, 1000);
+var div1_bar = beat_bar("div1", 500);
+var div2_bar = beat_bar("div2", 500);
+//var randomize_div1 = randomize_color(500, "div1");
+//var randomize_div2 = randomize_color(500, "div2");
+var toggle_div1 = toggle_color(500, "div1", "red");
+var toggle_div2 = toggle_color(500, "div2", "red");
+var div3_bar = beat_bar("div3", 500);
+var div4_bar = beat_bar("div4", 500);
+//var randomize_div3 = randomize_color(500, "div3");
+//var randomize_div4 = randomize_color(500, "div4");
+var toggle_div3 = toggle_color(500, "div3", "blue");
+var toggle_div4 = toggle_color(500, "div4", "blue");
+var div5_bar = beat_bar("div5", 500);
+var randomize_div5 = randomize_color(500, "div5");
+
+</script>
+
+<style>
+
+#example{
+position:fixed;
+top:75px;
+left:375px;
+height:500px;
+width:500px;
+background-color:red;
+}
+
+#gallery{
+	position:fixed;
+	top: 75px;
+	left:900px;
+	height: 500px;
+	width:200px;
+	background-color: blue;	
+}
+
+#div1{
+	position:fixed;
+	top: 75px;
+	left:10px;
+	height: 500px;
+	width:50px;
+	background-color: red;	
+}
+
+#div2{
+	position:fixed;
+	top: 75px;
+	left:100px;
+	height: 500px;
+	width:50px;
+	background-color: red;	
+}
+
+#div3{
+	position:fixed;
+	top: 75px;
+	left:1210px;
+	height: 500px;
+	width:50px;
+	background-color: red;	
+}
+
+#div4{
+	position:fixed;
+	top: 75px;
+	left:1300px;
+	height: 500px;
+	width:50px;
+	background-color: red;	
+}
+
+#div5{
+	position:fixed;
+	top: 75px;
+	left:190px;
+	height: 500px;
+	width:50px;
+	background-color: red;	
+}
+
+</style>
+
+</head>
+
+
+<body>
+<div id="example"></div>
+
+<div id="gallery"></div>
+
+<div id="div1"></div>
+<div id="div2"></div>
+<div id="div3"></div>
+<div id="div4"></div>
+<div id="div5"></div>
+
+
+</body>
+
+</html>
