@@ -10,6 +10,18 @@ var beat_bar = function(id, start_height){
 	}, 125);
 };
 
+var oscillate = function(id, dimension, start_dim_val, interval, amount){
+	var upswing;
+	return setInterval(function(){
+		var new_dim_val = parseInt($('div#' + id).css(dimension));
+		if (new_dim_val < amount) 
+			upswing = true;
+		else if (new_dim_val > start_dim_val - amount)
+			upswing = false;
+		$('div#' + id).css(dimension, new_dim_val + (upswing ? amount : -amount));
+	}, interval);
+};
+
 var toggle_color = function(interval, id, color){
 	return setInterval(function(){
 		if (color == "red"){
