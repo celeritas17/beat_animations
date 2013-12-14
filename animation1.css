@@ -1,0 +1,80 @@
+body{
+	background-color: black;
+}
+
+#example{
+position:fixed;
+top:75px;
+left:375px;
+height:500px;
+width:200px;
+background-color:red;
+}
+
+#gallery{
+	position:fixed;
+	top: 75px;
+	left:650px;
+	height: 500px;
+	width:200px;
+	background-color: blue;	
+}
+
+#div1{
+	position:fixed;
+	top: 75px;
+	left:10px;
+	height: 500px;
+	width:50px;
+	background-color: red;	
+}
+
+#div2{
+	position:fixed;
+	top: 75px;
+	left:100px;
+	height: 500px;
+	width:50px;
+	background-color: red;	
+}
+
+#div6{
+	position:fixed;
+	top: 75px;
+	left:1120px;
+	height: 500px;
+	width:50px;
+	background-color: red;	
+}
+
+#div3{
+	position:fixed;
+	top: 75px;
+	left:1210px;
+	height: 500px;
+	width:50px;
+	background-color: red;	
+}
+
+#div4{
+	position:fixed;
+	top: 75px;
+	left:1300px;
+	height: 500px;
+	width:50px;
+	background-color: red;	
+}
+
+#div5{
+	position:fixed;
+	top: 75px;
+	left:190px;
+	height: 500px;
+	width:50px;
+	background-color: red;	
+}
+
+#video{
+	left:900px;
+	top:200px;
+}
